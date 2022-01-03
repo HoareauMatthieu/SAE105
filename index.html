@@ -11,6 +11,15 @@
   <header>
       <img src="public/Icones/livrevideo-bigicone.svg" alt="icone Belvédère Historique">
       <img src="public/Icones/hamburgerbutton.svg" alt="boutton hamburger">
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
+                <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
+                <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
+                <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
+                <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
+            </ul>
+        </nav>
       <h1>Belvédère Historique</h1>
       <p>Des livres, des films pour
         comprendre le passé...</p>
