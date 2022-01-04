@@ -1,0 +1,46 @@
+.footer {
+    background-color: var(--darkblue);
+}
+
+.footer__top{
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-start;    
+    align-items: center;
+    gap: 20px;
+}
+.footer__logo {
+    padding-top: 5%;
+}
+
+.footer__titre {
+    padding-top: 15px;
+    color: var(--white);
+    font-size: var(--textepindex);
+}
+
+.footer__mention{
+    text-align: center;
+}
+
+.footer__p {
+    font-family: var(--roboto);
+    font-weight: bold;
+}
+
+.footer__list{
+    display: flex;
+    gap: 2vh;
+    justify-content: center;
+}
+
+.footer__mmi{
+    display: flex;
+    gap:1vh;
+    margin-left: 3vh;
+}
+
+.footer__copyright{
+    font-size: var(--informationsobligatoires);
+    text-align: center;
+}
