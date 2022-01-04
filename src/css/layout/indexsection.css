@@ -61,6 +61,13 @@
     text-transform: uppercase;
 }
 
+.index__p{
+    color: var(--black);
+    margin: 3vh -3vh;
+    margin-bottom: 0;
+    font-size: var(--textepindex);
+}
+
 .index__p1{
     color: var(--white);
     margin: 3vh -3vh;
