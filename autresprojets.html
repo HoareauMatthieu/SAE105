@@ -8,21 +8,27 @@
 </head>
 <body>
     
-  <header>
-      <img src="public/Icones/livrevideo-smallicone.svg" alt="icone Belvédère Historique">
-      <h1>Belvédère Historique</h1>
-      <img src="public/Icones/hamburgerbutton.svg" alt="boutton hamburger">
-      <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-        <ul class="menu__list list-unstyled">
-            <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
-            <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
-            <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
-            <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
-            <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
-        </ul>
-    </nav>
-      <img src="public/img/header.webp" alt="livres">
-  </header> 
+    <header class="header container">
+        <div class="header__all">
+            <img class="header__logo" src="public/Icones/livrevideo-smallicone.svg" alt="icone Belvédère Historique">
+            <h1 class="header__titre">Bélvédère Historique</h1>
+            <img class="header__background" src="public/img/header.webp" alt="bouquin">
+              <button class="header__menu-btn menu-btn">
+                  <span class="menu-btn__bar"></span>
+              </button>
+              <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                  <ul class="menu__list list-unstyled">
+                      <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
+                      <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
+                      <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
+                      <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
+                      <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
+                  </ul>
+              </nav>
+          </div>
+    </header> 
+
+
 
   <main>
         <h2>Autres<br>Projets</h2>
