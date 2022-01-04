@@ -4,8 +4,8 @@
 
   body {
     background-color: var(--white);
-    color: var(--white);
-    font-family: 
+    color: var(--black);
+    font-family: var(--roboto)
 }
 
 .list-unstyled{
