@@ -31,28 +31,30 @@
 
  
 
-  <main>
-        <h2>Des questions ?</h2>
+    <main class="commentaire commentaire__main">
+
+        <h2 class="commentaire page__titre">Des questions ?</h2>
         
         <form class="commentaire__form">
             <div class="commentaire__div">
-                <label class="commentaire__label" for="Nom">Nom</label>
-                <input class="commentaire__input" type="text" name="Nom" id="Nom">
+                <input class="commentaire__input" placeholder="Nom" type="text" name="Nom" id="Nom">
             </div>
             <div class="commentaire__div">
-                <label class="commentaire__label" for="Adressemail">Adresse mail</label>
-                <input class="commentaire__input" type="text" name="Adressemail" id="Adressemail">
+                <input placeholder="Adressmail" class="commentaire__input" type="text" name="Adressemail" id="Adressemail">
             </div>
             <div class="commentaire__div">
-                <label class="commentaire__label" for="Requête">Requête</label>
-                <input class="commentaire__input" type="text" name="Requête" id="Requête">
+                <input placeholder="Requête" class="commentaire__input" type="text" name="Requête" id="Requête">
             </div>
-            <p>En renseignant votre adresse email et en vous abonnant à notre newsletter, vous acceptez de recevoir chaque semaine nos derniers articles de blog par courrier électronique et vous prenez connaissance de notre politique de confidentialité.</p>
-            <p>Vous pouvez vous désinscrire à tout moment à l'aide des liens de désinscription ou en nous contactant à l'adresse contact@belvederehistorique.fr</p>
+            <div class="commentaire__checkbox">
+                <input class="commentaire__box" type="checkbox" />
+                <p class="commentaire__info">Je m'abonne à la newsletter</p>
+            </div>
+                <p class="commentaire__info">En renseignant votre adresse email et en vous abonnant à notre newsletter, vous acceptez de recevoir chaque semaine nos derniers articles de blog par courrier électronique et vous prenez connaissance de notre politique de confidentialité.</p>
+                <p class="commentaire__info">Vous pouvez vous désinscrire à tout moment à l'aide des liens de désinscription ou en nous contactant à l'adresse contact@belvederehistorique.fr</p>
+                
             <button class="commentaire__send" type="submit">Envoyer</button>
         </form>
     </main>
-
     <footer class="footer">
         <div class="footer__top">
             <img class="footer__logo" src="public/Icones/livrevideo-smallicone.svg" alt="icone icone Belvédère Historique">
