@@ -1,3 +1,19 @@
+.hero__titre{
+    font-family: var(--cantata);
+    font-size: var(--belvederetitre);
+    text-align: center;
+    color: var(--white);
+}
+
+
+.hero__tagline {
+    text-align: center;
+    font-size: var(--textepindex);
+    color: var(--white);
+    margin: 25vh 7vh;
+}
+
+
 .hero__background {
     position: absolute;
     top: 0;
