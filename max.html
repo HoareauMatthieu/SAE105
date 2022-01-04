@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Max</title>
 </head>
 <body>
     
-  <header>
-      <img src="public/Icones/livrevideo-smallicone.svg" alt="icone Belvédère Historique">
-      <h1>Belvédère Historique</h1>
-      <img src="public/Icones/hamburgerbutton.svg" alt="boutton hamburger">
-      <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-        <ul class="menu__list list-unstyled">
-            <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
-            <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
-            <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
-            <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
-            <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
-        </ul>
-    </nav>
-      <img src="public/img/header.webp" alt="livres">
-  </header> 
+    <header class="header container">
+        <div class="header__start">
+            <img class="header__img" src="public/Icones/livrevideo-smallicone.svg" alt="icone Belvédère Historique">
+              <button class="header__menu-btn menu-btn">
+                  <span class="menu-btn__bar"></span>
+              </button>
+              <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                  <ul class="menu__list list-unstyled">
+                      <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
+                      <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
+                      <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
+                      <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
+                      <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
+                  </ul>
+              </nav>
+          </div>
+           
+        
+    </header> 
 
   <main>
+        <div class="hero">
+            <h1 class="hero__titre">Belvédère Historique</h1>
+            <img class="hero__background" src="public/img/index/bookindex.webp" alt="livres">
+        </div>
         <h2>Max, un témoignage <br> glaçant</h2>
         <p>Un roman coup de poing écrit par Sarah Cohen-Scali en 2012, une fiction s’inspirant de faits réels. Max, spectateur des jeunesses hitlériennes.</p>
         <figure>
