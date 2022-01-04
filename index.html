@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
     <title>Page d'accueil</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    
 </head>
 <body>
 
   <header class="header container">
       <div class="header__index">
           <img class="header__iconeindex" src="public/Icones/livrevideo-bigicone.svg" alt="icone Belvédère Historique">
-            <button class="header__menu-btn menu-btn">
-                <span class="menu-btn__bar"></span>
-            </button>
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                  @pointerdown="menuIsOpen = !menuIsOpen" 
+                  :class="menuIsOpen && 'menu-btn--open'">
+              <span class="menu-btn__bar"></span>
+          </button>
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
@@ -48,7 +52,7 @@
                   <p class="index__p1">Un roman coup de poing écrit par Sarah Cohen-Scali en 2012, une fiction s’inspirant de faits réels. Max, spectateur des jeunesses hitlériennes...</p>
                 </figcaption>
           </figure>
-          <p class="index__button1">Je decouvre le livre</p>
+          <p class="index__button1"><a class="index__lienbutton1" href="/max.html"> Je decouvre le livre</a></p>
       </div>
 
       <div class="index__section2">
@@ -56,10 +60,10 @@
             <img class="index__img" src="public/img/index/lavague1.webp" alt="Affiche du film La Vague">
                 <figcaption class="index__figcaption">
                   <h3 class="index__soustitre2">La Vague</h3>  
-                  <p class="index__p">La possibilité d’un nouveau régime totalitaire Allemand en 2009 semble impossible. C’est pourtant ce que...</p>
+                  <p class="index__p"> La possibilité d’un nouveau régime totalitaire Allemand en 2009 semble impossible. C’est pourtant ce que...</p>
                 </figcaption>
           </figure>
-          <p class="index__button2">Je découvre le film</p>
+          <p class="index__button2"><a class="index__lienbutton2" href="/max.html"> Je découvre le film</a></p>
       </div>
       <div class="index__section1">
           <figure class="index__figure">
@@ -69,7 +73,7 @@
                   <p class="index__p1">Max et La Vague parle tout les deux de la jeunesse dans les régimes totalitaires. Les jeunesses hitlériennes en sont un exemple. Ces trois éléments montreront...</p>
                 </figcaption>
           </figure>
-          <p class="index__button1">Je découvre le film</p>
+          <p class="index__button1"><a class="index__lienbutton1" href="/jeunesse.html"> Je découvre l'article</a></p>
       </div>
     </div>
   </main>
@@ -81,8 +85,8 @@
       </div>
       <ul class="footer__mention list-unstyled">
           <li><p class="footer__p"> Mentions Légales</p></li>
-          <li><p class="footer__p">À propos</p></li>
-          <li><p class="footer__p">Contact</p></li>
+          <li><p class="footer__p"><a class="footer__lien" href="/apropos.html">À propos</a> </p></li>
+          <li><p class="footer__p"><a class="footer__lien" href="/questions.html">Contact</a></p></li>
       </ul>
       <ul class="footer__list list-unstyled">
           <li class="footer__item"> <a class="footer__icone" href="https://facebook.com"></a> <img src="public/Icones/facebooklogo.svg" alt="Logo de Facebooklogo"></li>
