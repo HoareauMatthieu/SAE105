@@ -37,6 +37,7 @@
 }
 
 /*header autres pages*/
+
 .header__all {
     position: fixed;
     display: flex;
@@ -47,11 +48,12 @@
 }
 
 .header__logo {
-    margin-top: -90px;
+    margin-top: -70px;
     padding-right: 50px;
 }
 
 .header__titre {
+    margin-top: O;
     font-size: var(--textepindex);
     color: var(--white);
     font-family: 'Cantata One', serif;
