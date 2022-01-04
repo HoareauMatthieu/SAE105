@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Roboto:wght@400;900&display=swap');
 
+/*component*/
+@import url('components/menu.css');
+
+/*layout*/
+@import url('layout/header.css');
 
 /*vendors*/
 @import url('vendors/normalize.css');
@@ -9,3 +14,4 @@
 
 /*base*/
 @import url('base/main.css');
+
