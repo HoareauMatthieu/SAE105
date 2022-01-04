@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Page d'accueil</title>
 </head>
 <body>
 
-  <header>
-      <img src="public/Icones/livrevideo-bigicone.svg" alt="icone Belvédère Historique">
-      <img src="public/Icones/hamburgerbutton.svg" alt="boutton hamburger">
-        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-            <ul class="menu__list list-unstyled">
-                <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
-                <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
-                <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
-                <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
-                <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
-            </ul>
-        </nav>
-      <h1>Belvédère Historique</h1>
-      <p>Des livres, des films pour
-        comprendre le passé...</p>
-      <img src="public/img/index/bookindex.png" alt="livres">
+  <header class="header container">
+      <div class="header__start">
+          <img class="header__img" src="public/Icones/livrevideo-smallicone.svg" alt="icone Belvédère Historique">
+            <button class="header__menu-btn menu-btn">
+                <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
+                    <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
+                    <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
+                    <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>    
   </header> 
 
   <main>
+    <div class="hero">
+        <h1 class="hero__titre">Belvédère Historique</h1>
+        <img class="hero__background" src="public/img/index/bookindex.webp" alt="livres">
+    </div>
       <h2>Sujet de la semaine</h2>
       <img src="public/Icones/flechebas.svg" alt="flèche pour descendre">
       <p>L’importance de la jeunesse dans les régimes totalitaires.</p>
