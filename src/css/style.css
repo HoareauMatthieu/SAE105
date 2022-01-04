@@ -1,1 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Roboto:wght@400;900&display=swap');
+
+
+/*vendors*/
+@import url('vendors/normalize.css');
+
+/*utils*/
+@import url('utils/variable.css');
+
+/*base*/
+@import url('base/main.css');

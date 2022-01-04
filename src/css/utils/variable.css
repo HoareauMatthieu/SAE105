@@ -1,5 +1,31 @@
 :root {
     
-/*Color style*/
+/* Color styles */
+--white: rgba(255, 255, 255, 1);
+--black: rgba(0, 0, 0, 1);
+--greyblue: rgba(105, 136, 146, 1);
+--red: rgba(197, 25, 25, 1);
+--darkblue: rgba(15, 56, 72, 1);
+--grey: rgba(229, 229, 229, 1);
+--dark-grey: rgba(209, 209, 209, 1);
+
+/* Text-size styles */
+--buttondecouverte: 24px;
+--cantatamisenavant: 18px;
+--mentionslégales: 16px;
+--informationsobligatoires: 11px;
+--belvederetitre: 36px;
+--textepindex: 22px;
+--titrearticle: 26px;
+--textblackpindex: 22px;
+--chapoarticle: 16px;
+--légende: 14px;
+--texte: 16px;
+--texteblack: 16px;
+--sous-titre: 22px;
+--citation: 16px;
+
+/* Effect styles */
+--shadow-1:  0px 4px 6px rgba(0, 0, 0, 0.54);
 
 }
