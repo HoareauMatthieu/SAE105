@@ -25,6 +25,7 @@
 
 .footer__p {
     font-family: var(--roboto);
+    color: var(--white);
     font-weight: bold;
 }
 
@@ -43,10 +44,12 @@
 .footer__remarque {
     font-family: var(--roboto);
     font-size: var(--informationsobligatoires);
+    color: var(--white);
 }
 
 .footer__copyright{
     font-family: var(--roboto);
+    color: var(--white);
     font-size: var(--informationsobligatoires);
     text-align: center;
     margin-bottom: 0;
