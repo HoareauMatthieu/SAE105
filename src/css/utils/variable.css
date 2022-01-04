@@ -19,6 +19,9 @@
 --légende: 0.875rem;
 --texte: 1rem;
 
+/*font*/
+--cantata:'Cantata One', serif;
+--roboto:'Roboto', sans-serif;
 
 /* Effect styles */
 --shadow-1:  0px 4px 6px rgba(0, 0, 0, 0.54);
