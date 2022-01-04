@@ -17,6 +17,7 @@
     padding-top: 15px;
     color: var(--white);
     font-size: var(--textepindex);
+    font-family: var(--cantata);
 }
 
 .footer__mention{
