@@ -9,36 +9,36 @@
 </head>
 <body>
     
-  <header class="header container">
-      <img class="header__start" src="public/Icones/livrevideo-smallicone.svg" alt="icone Belvédère Historique">
-        <div class="header__end">
-            <button class="header__menu-btn menu-btn">
-                <span class="menu-btn__bar"></span>
-            </button>
-            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-                <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
-                    <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
-                    <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
-                    <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-         <h1 class="header__titreindex">Belvédère Historique</h1>
-      <img class="header__background" src="public/img/header.webp" alt="livres">
-  </header> 
+    <header class="header container">
+        <div class="header__all">
+            <img class="header__logo" src="public/Icones/livrevideo-smallicone.svg" alt="icone Belvédère Historique">
+            <h1 class="header__titre">Bélvédère Historique</h1>
+            <img class="header__background" src="public/img/header.webp" alt="bouquin">
+              <button class="header__menu-btn menu-btn">
+                  <span class="menu-btn__bar"></span>
+              </button>
+              <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                  <ul class="menu__list list-unstyled">
+                      <li class="menu__item"><a class="menu__link" href="max.html">Bouquin</a></li>
+                      <li class="menu__item"><a class="menu__link" href="lavague.html">Ciné</a></li>
+                      <li class="menu__item"><a class="menu__link" href="jeunesse.html">Point-commun</a></li>
+                      <li class="menu__item"><a class="menu__link" href="autresprojets.html">Autres projets</a></li>
+                      <li class="menu__item"><a class="menu__link" href="questions.html">Contact</a></li>
+                  </ul>
+              </nav>
+          </div>
+    </header> 
 
-  <main>
-        <h2>À propos</h2>
-        <p>Qu'apprendrez vous sur Belvédère Historique ?</p>
-        <p>L’Histoire via des livres et des films .</p>
-        <p>Pourquoi lire ce site ?</p>
-        <p>Pour s’instruire avec des livres et des films géniaux !</p>
-        <p>Pourquoi avoir créé le Belevédère Historque ?</p>
-        <p>Le Belvédère Historique a été créer dans le cadre d'un projet pour ma première année de D.U.T MMI.</p>
-        <p>En savoir plus sur moi :</p>
-        <p><a href="delphine.oudot.fr">delphine.oudot.fr</a></p>
+  <main class="page page__main">
+        <h2 class="page__titre">À propos</h2>
+        <p class="page__question">Qu'apprendrez vous sur Belvédère Historique ?</p>
+        <p class="page__reponse">L’Histoire via des livres et des films .</p>
+        <p class="page__question">Pourquoi lire ce site ?</p>
+        <p class="page__reponse">Pour s’instruire avec des livres et des films géniaux !</p>
+        <p class="page__question">Pourquoi avoir créé le Belevédère Historque ?</p>
+        <p class="page__reponse">Le Belvédère Historique a été créer dans le cadre d'un projet pour ma première année de D.U.T MMI.</p>
+        <p class="page__question">En savoir plus sur moi :</p>
+        <p class="page__reponse list-unstyled">site:<a class="page__lien" href="delphine.oudot.fr">delphine.oudot.fr</a></p>
     </main>
     
     <footer class="footer">

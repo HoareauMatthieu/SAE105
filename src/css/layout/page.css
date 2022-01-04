@@ -81,3 +81,19 @@
     margin-right: 5vh;
     margin-bottom: 5vh;
 }
+
+.page__question {
+    font-family: var(--cantata);
+    font-size: var(--cantatamisenavant);
+}
+
+.page__reponse{
+    font-size: var(--texte);
+    margin-bottom: 3vh;
+    
+}
+
+.page__lien{
+    color: var(--black);
+
+}
