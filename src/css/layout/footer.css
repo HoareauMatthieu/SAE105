@@ -40,7 +40,13 @@
     margin-left: 3vh;
 }
 
+.footer__remarque {
+    font-family: var(--roboto);
+    font-size: var(--informationsobligatoires);
+}
+
 .footer__copyright{
+    font-family: var(--roboto);
     font-size: var(--informationsobligatoires);
     text-align: center;
 }
