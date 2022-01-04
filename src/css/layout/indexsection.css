@@ -10,10 +10,7 @@
     margin-right: auto;
 }
 
-.index__p{
-    margin: 3vh 3vh;
-    font-size: var(--textepindex);
-}
+
 
 .index__pg{
     margin-right: 3vh;
@@ -63,7 +60,7 @@
 
 .index__p{
     color: var(--black);
-    margin: 3vh -3vh;
+    margin: 3vh 3vh;
     margin-bottom: 0;
     font-size: var(--textepindex);
 }
@@ -99,4 +96,12 @@
     align-self: center;
     margin-top: 10px;
     margin-bottom: 10%;
+}
+
+.index__lienbutton1{
+    color: var(--red);
+}
+
+.index__lienbutton2 {
+    color: var(--white);
 }
