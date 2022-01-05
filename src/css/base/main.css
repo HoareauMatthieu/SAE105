@@ -30,3 +30,8 @@
   h1 a {
     color: var(--white);
   }
+
+  .noscroll,
+  .noscroll body {
+    overflow: hidden;
+  }

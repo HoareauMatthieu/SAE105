@@ -3,8 +3,6 @@
     opacity: 0;
     overflow: hidden;
     position: fixed;
-    display: flex;
-    position: fixed;
     top: 0; bottom: 0;
     left: 0; right : 0;
     background-color: var(--darkblue);
@@ -19,17 +17,39 @@
   }
 
   .menu__list {
-    margin-top: 10vh;
-    margin-left: 10vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
   }
 
   .menu__item {
-    margin-top: 15%;
+    background-color: var(--white);
+    border: var(--black);
+    font-size: var(--buttondecouverte);
+    color: var(--black);
+    padding: 5% 10%;
+    width: 350px;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu__icone{
+    width: 40px;
   }
 
   .menu__link {
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .menu__titre{
+    font-size: var(--titrearticle);
     color: var(--white);
-    text-decoration: none;/*ici faire box*/
+    margin-left: 10px;
   }
 
   .menu-btn {
@@ -76,3 +96,4 @@
 .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
   background-color: var(--white);
 }
+
