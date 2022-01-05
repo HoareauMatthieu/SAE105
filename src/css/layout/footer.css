@@ -1,5 +1,6 @@
 .footer {
     background-color: var(--darkblue);
+    margin-top: 10vh;
 }
 
 .footer__top{
