@@ -74,19 +74,19 @@
         </div>
         <h3 class="page__soustitre"><span>Autres ouvrages de l’auteur</span></h3>
         <figure class="page__figure">
-            <img class="page__image" src="public/img/max/mauvaisdelires.webp" alt="1ère de couverture de Muavais Délires">
-            <figcaption class="page__figcaption">
-                <p class="page__legende">Mauvais délire</p>
-                <p class="page__description">Ce nouveau recueil fantastique plonge le lecteur dans des univers où la frontière entre raison et folie disparaît.</p>
-            </figcaption>
+            <div class="page__legend">
+            <img x-on:mouseover="monterLegende3();" 
+                x-on:mouseleave="descendreLegende3();" class="page__image" src="public/img/max/mauvaisdelires.webp" alt="1ère de couverture de Muavais Délires">
+                <p class="page__legende3">Mauvais délire <br> Ce nouveau recueil fantastique plonge le lecteur dans des univers où la frontière entre raison et folie disparaît.</p>
+            </div>
         </figure>
         
         <figure class="page__figure">
             <div class="page__legend">
                 <img x-on:mouseover="monterLegende2();" 
-                     x-on:mouseleave="descendreLegende2();" class="page__image" src="public/img/max/Orphelins.webp" alt="1ère de couverture de Orphelins 88">
-                <p class="page__legende2">Orphelin 88</p>
-                <p class="page__legende2">Un roman saisissant qui éclaire un pan méconnu de l’après- Seconde Guerre mondiale et les drames liés au programme eugéniste des nazis, le Lebensborn.</p>
+                x-on:mouseleave="descendreLegende2();" class="page__image" src="public/img/max/Orphelins.webp" alt="1ère de couverture de Orphelins 88">
+               
+                <p class="page__legende2"> Orphelin 88 <br> Un roman saisissant qui éclaire un pan méconnu de l’après- Seconde Guerre mondiale et les drames liés au programme eugéniste des nazis, le Lebensborn.</p>
             </div>
         </figure>
   </main>

@@ -81,3 +81,25 @@ function descendreLegende2() {
 	}).play;
 }
 
+function monterLegende3() {
+	let page__legende3 = document.querySelector('.page__legende3');
+	return anime({
+		targets: page__legende3 , 
+		translateY: '0', 
+		autoplay: false,
+		easing: 'linear',
+		duration: 100,
+		
+	}).play;
+}
+
+function descendreLegende3() {
+    let page__legende3 = document.querySelector('.page__legende3');
+	return anime({
+		targets: page__legende3, 
+		translateY: '5em',
+		autoplay:false,
+		easing: 'linear',
+		duration: 100
+	}).play;
+}
