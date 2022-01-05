@@ -34,26 +34,50 @@ function carrousel() {
 }
 
 
-function monterLegende() {
-	let index__p1 = document.querySelector('.index__p1');
+function monterLegende1() {
+	let page__legende1 = document.querySelector('.page__legende1');
 	return anime({
-		targets: index__p1 , 
-		translateY: '-5em', 
+		targets: page__legende1 , 
+		translateY: '0', 
 		autoplay: false,
 		easing: 'linear',
-		duration: 200,
-		update: function() {
-		index__p1.style.display = "block";
-		}
+		duration: 100,
+		
 	}).play;
 }
 
-function descendreLegende() {
+function descendreLegende1() {
+    let page__legende1 = document.querySelector('.page__legende1');
 	return anime({
-		targets: '.index__p1', 
+		targets: page__legende1, 
 		translateY: '5em',
 		autoplay:false,
 		easing: 'linear',
-		duration: 200
+		duration: 100
 	}).play;
 }
+
+
+function monterLegende2() {
+	let page__legende2 = document.querySelector('.page__legende2');
+	return anime({
+		targets: page__legende2 , 
+		translateY: '0', 
+		autoplay: false,
+		easing: 'linear',
+		duration: 100,
+		
+	}).play;
+}
+
+function descendreLegende2() {
+    let page__legende2 = document.querySelector('.page__legende2');
+	return anime({
+		targets: page__legende2, 
+		translateY: '5em',
+		autoplay:false,
+		easing: 'linear',
+		duration: 100
+	}).play;
+}
+

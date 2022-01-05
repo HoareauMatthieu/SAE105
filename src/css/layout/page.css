@@ -153,3 +153,37 @@
    padding: 0 5px;
    
 }
+
+.page__legende1 {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	z-index: 2;
+	line-height: 5em;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.55);
+	bottom: 0;
+    transform: translateY(5em);
+}
+
+.page__legende2 {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	z-index: 2;
+	line-height: 5em;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.55);
+	bottom: 0;
+    transform: translateY(5em);
+}	
+
+.page__legend{
+    height: 315px;
+    overflow: hidden;
+    position: relative;
+}
