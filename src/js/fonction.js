@@ -1,10 +1,10 @@
 function carrousel() {
-    var carrousel__image = document.querySelectorAll('.carrousel__image');
+    var carrousel__bloc = document.querySelectorAll('.carrousel__bloc');
     let d = 2000;
     let delta = 1000;
 
-    carrousel__image.forEach(function(img,indice) {
-        img.style.zIndex = carrousel__image.length - indice;
+    carrousel__bloc.forEach(function(img,indice) {
+        img.style.zIndex = carrousel__bloc.length - indice;
     });
 
     let anim153 = anime.timeline({
@@ -13,9 +13,9 @@ function carrousel() {
     });
 
     anim153.add({
-        targets: carrousel__image,
-        translateX: [{value: '190', duration: d},
-                     {value: '-190', duration: 0, delay: function(img,ind) {
+        targets: carrousel__bloc,
+        translateX: [{value: '182px', duration: d},
+                     {value: '-182px', duration: 0, delay: function(img,ind) {
                          if (ind == 0) return (2*delta)+d;
                          if (ind == 1) return delta;
                          return 0;
@@ -31,4 +31,29 @@ function carrousel() {
             return (3*delta)+(2*d);
         }
     });
+}
+
+
+function monterLegende() {
+	let index__p1 = document.querySelector('.index__p1');
+	return anime({
+		targets: index__p1 , 
+		translateY: '-5em', 
+		autoplay: false,
+		easing: 'linear',
+		duration: 200,
+		update: function() {
+		index__p1.style.display = "block";
+		}
+	}).play;
+}
+
+function descendreLegende() {
+	return anime({
+		targets: '.index__p1', 
+		translateY: '5em',
+		autoplay:false,
+		easing: 'linear',
+		duration: 200
+	}).play;
 }
