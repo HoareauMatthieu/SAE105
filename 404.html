@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+		<script src="https://animejs.com/lib/anime.min.js"></script>
+		<script src="src/js/fonction.js"></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    
+</head>
+<body>
+
+  <header class="header container">
+      <div class="header__index">
+          <img class="header__iconeindex" src="public/Icones/livrevideo-bigicone.svg" alt="icone Belvédère Historique">
+          
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                  @pointerdown="menuIsOpen = !menuIsOpen" 
+                  :class="menuIsOpen && 'menu-btn--open'">
+              <span class="menu-btn__bar"></span>
+          </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+              <h2 class="menu__titre">Menu</h2>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="max.html"> <img class="menu__icone" src="public/Icones/livre.svg" alt="icone livre"> Bouquin </a></li>
+                    <li class="menu__item"><a class="menu__link" href="lavague.html"> <img class="menu__icone" src="public/Icones/Films.svg" alt="icone film">Ciné</a></li>
+                    <li class="menu__item"><a class="menu__link" href="jeunesse.html"> <img class="menu__icone" src="public/Icones/Pointcommun.svg" alt="icone point commun">Point-commun</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autresprojets.html"> <img class="menu__icone" src="public/Icones/Autresprojet.svg" alt="icone autresprojets">Autres projets</a></li>
+                    <li class="menu__item"><a class="menu__link" href="questions.html" > <img class="menu__icone" src="public/Icones/email.svg" alt="icone livre">Contact</a></li>
+                </ul>
+            </nav>
+        </div>    
+  </header> 
+<main>
+    <div class="hero">
+        <h1 class="hero__titre">Belvédère Historique</h1>
+        <p class="hero__404">ERREUR 404 - VEUILLEZ RETOURNEZ ICI</p>
+        <form action="https://duckduckgo.com/" method="GET" 
+    x-data="{ q:'', }" 
+    x-on:submit="q = q + ' site:mmimontbeliard.com'">
+    <label for="q">Text à chercher :</label>
+    <input type="text" id="q" name="q" x-model="q">
+    <button type="submit">Rechercher</button>
+</form>
+        <img class="hero__background" src="public/img/index/bookindex.webp" alt="livres">
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer__top">
+        <img class="footer__logo" src="public/Icones/livrevideo-smallicone.svg" alt="icone icone Belvédère Historique">
+        <h4 class="footer__titre">Belvédère Historique</h4>
+    </div>
+    <ul class="footer__mention list-unstyled">
+        <li><p class="footer__p"> Mentions Légales</p></li>
+        <li><p class="footer__p"><a class="footer__lien" href="/apropos.html">À propos</a> </p></li>
+        <li><p class="footer__p"><a class="footer__lien" href="/questions.html">Contact</a></p></li>
+    </ul>
+    <ul class="footer__list list-unstyled">
+        <li class="footer__item"> <a class="footer__icone" href="https://facebook.com"></a> <img src="public/Icones/facebooklogo.svg" alt="Logo de Facebooklogo"></li>
+        <li class="footer__item"><a class="footer__icone" href="https://instagram.com"></a><img src="public/Icones/instagramlogo.svg" alt="Logo de Instagram"></li>
+        <li class="footer__item"><a class="footer__icone" href="https://twitter.com"></a><img src="public/Icones/twitterlogo.svg" alt="Logo de Twitter"></li>
+    </ul>
+    <div class="footer__mmi">
+    <img src="public/Icones/MMIwhitelogo.svg" alt="Logo du département de MMI Montbéliard">
+    <p class="footer__remarque">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
+  </div>
+    <p class="footer__copyright">©2018 belvédère-historique</p>
+</footer>
+
+
+</body>
+</html>
