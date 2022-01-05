@@ -3,11 +3,6 @@
 }
 
 
-
-.page *:not(img,figure,figcaption,strong,.page__divcit, .page__citation, .page__divextrait, .page__description, .page__titre, .page__soustitre, span) {
-   
-}
-
 .page__titre{
     font-family: var(--cantata);
     font-size: var(--titrearticle);
@@ -125,7 +120,6 @@
      margin: 0 20px;
      padding: 0 5px;
      z-index: -1;
-
  }
 
  .page__soustitre {
