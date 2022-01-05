@@ -10,7 +10,7 @@
 
 .header__index {
     margin-top: 1vh;
-    padding-left: 17vh;
+    padding-left: 20vh;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -39,12 +39,15 @@
 /*header autres pages*/
 
 .header__all {
+    width: 100%;
     position: fixed;
     display: flex;
     gap: 5px;
     list-style: none;
     margin: 0;
     padding: 0;
+    z-index: 3;
+    padding-top: 12px;
 }
 
 .header__logo {
@@ -59,8 +62,5 @@
     font-family: 'Cantata One', serif;
 }
 
-.menu-btn{
-    margin-right: 8px;
-}
 
 
