@@ -39,6 +39,7 @@
 
   .menu__icone{
     width: 40px;
+    padding-right: 5px;
   }
 
   .menu__link {
