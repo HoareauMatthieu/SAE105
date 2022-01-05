@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <title>Max</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+		<script src="https://animejs.com/lib/anime.min.js"></script>
+		<script src="src/js/fonction.js"></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    
 </head>
 <body>
     
@@ -39,10 +43,11 @@
         <h2 class="page__titre"><span>Max, un témoignage  glaçant</span></h2>
         <p class="page__chapo">Un roman coup de poing écrit par Sarah Cohen-Scali en 2012, une fiction s’inspirant de faits réels. Max, spectateur des jeunesses hitlériennes.</p>
         <figure class="page__figure">
-            <img class="page__image" src="public/img/max/maxcover2.webp" alt="1ère de couverture de Max">
-            <figcaption class="page__figcaption">
-                <p class="page__legende">Couverture du livre Max.</p>
-            </figcaption>
+            <div class="page__legend">
+                <img x-on:mouseover="monterLegende1();" 
+                x-on:mouseleave="descendreLegende1();" class="page__image" src="public/img/max/maxcover2.webp" alt="1ère de couverture de Max">
+                <p class="page__legende1">Couverture du livre Max.</p>
+            </div>
         </figure>
 
         <p class="page__texte"> A l’ouverture du livre l’auteure nous plonge dans la peau d’un nouveau né. Celui-ci va naître dans un contexte atypique. <strong class="page__textegras"> Né d’un père nazi et d’une mère aryenne, l’enfant est conditionné à être parfait </strong> suivant certains critères.</p>
@@ -77,11 +82,12 @@
         </figure>
         
         <figure class="page__figure">
-            <img class="page__image" src="public/img/max/Orphelins.webp" alt="1ère de couverture de Orphelins 88">
-            <figcaption class="page__figcaption">
-                <p class="page__legende">Orphelin 88</p>
-                <p class="page__description">Un roman saisissant qui éclaire un pan méconnu de l’après- Seconde Guerre mondiale et les drames liés au programme eugéniste des nazis, le Lebensborn.</p>
-            </figcaption>
+            <div class="page__legend">
+                <img x-on:mouseover="monterLegende2();" 
+                     x-on:mouseleave="descendreLegende2();" class="page__image" src="public/img/max/Orphelins.webp" alt="1ère de couverture de Orphelins 88">
+                <p class="page__legende2">Orphelin 88</p>
+                <p class="page__legende2">Un roman saisissant qui éclaire un pan méconnu de l’après- Seconde Guerre mondiale et les drames liés au programme eugéniste des nazis, le Lebensborn.</p>
+            </div>
         </figure>
   </main>
 
