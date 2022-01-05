@@ -9,7 +9,7 @@
 }
 
 .header__index {
-    margin-top: -3vh;
+    margin-top: 1vh;
     padding-left: 17vh;
     display: flex;
     align-items:center;
@@ -48,7 +48,7 @@
 }
 
 .header__logo {
-    margin-top: -70px;
+    margin-top: -20px;
     padding-right: 50px;
 }
 
@@ -57,6 +57,10 @@
     font-size: var(--textepindex);
     color: var(--white);
     font-family: 'Cantata One', serif;
-    margin-right: 90px;
 }
+
+.menu-btn{
+    margin-right: 8px;
+}
+
 
