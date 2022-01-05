@@ -23,8 +23,6 @@
 
 .commentaire__send {
     margin-top: 20px;
-    color: var(--black);
-    background-color: var(--tonique);
     height: 50px;
     border-radius: 25px;
     text-transform: uppercase;
@@ -64,3 +62,20 @@
     margin-right: auto;
 }
 
+.error{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--buttondecouverte);
+    
+}
+
+.error__button{
+    margin-top: 20px;
+    background-color: var(--red);
+    padding: 10px;
+    color: var(--white);
+    font-size: var(--buttondecouverte);
+    text-transform: uppercase;
+}
