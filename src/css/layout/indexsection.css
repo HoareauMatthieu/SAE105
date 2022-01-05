@@ -39,6 +39,7 @@
 
 .index__img{
     padding-top: 25px;
+    
 }
 
 .index__soustitre1{
@@ -111,10 +112,15 @@
     text-align: center; 
     border-bottom: 5px solid var(--red); 
     line-height: 0.1em;
-    margin: px 0 20px; 
+    
  } 
  
  .index__titre span { 
      background:var(--white); 
      padding:0 10px; 
+     margin-top: 10px;
+ }
+
+ .index__figure{
+    text-align: center;
  }
