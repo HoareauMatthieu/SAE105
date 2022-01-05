@@ -3,6 +3,7 @@
 /*component*/
 @import url('components/menu.css');
 @import url('components/commentaire.css');
+@import url('components/gabarit.css');
 
 /*layout*/
 @import url('layout/header.css');
@@ -20,4 +21,6 @@
 
 /*base*/
 @import url('base/main.css');
+
+
 

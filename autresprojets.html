@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+	<script src="https://animejs.com/lib/anime.min.js"></script>
+	<script src="src/js/fonction.js"></script>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <title> Autres-projets</title>
 </head>
@@ -17,36 +21,42 @@
             <h1 class="header__titre"><a href="/">Bélvédère Historique</a></h1>
             <img class="header__background" src="public/img/header.webp" alt="bouquin">
 
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-                  @pointerdown="menuIsOpen = !menuIsOpen" 
-                  :class="menuIsOpen && 'menu-btn--open'">
-              <span class="menu-btn__bar"></span>
-          </button>
-            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-                <h2 class="menu__titre">Menu</h2>
-                <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="max.html"> <img class="menu__icone" src="public/Icones/livre.svg" alt="icone livre"> Bouquin </a></li>
-                    <li class="menu__item"><a class="menu__link" href="lavague.html"> <img class="menu__icone" src="public/Icones/Films.svg" alt="icone film">Ciné</a></li>
-                    <li class="menu__item"><a class="menu__link" href="jeunesse.html"> <img class="menu__icone" src="public/Icones/Pointcommun.svg" alt="icone point commun">Point-commun</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html"> <img class="menu__icone" src="public/Icones/Autresprojet.svg" alt="icone autresprojets">Autres projets</a></li>
-                    <li class="menu__item"><a class="menu__link" href="questions.html" > <img class="menu__icone" src="public/Icones/email.svg" alt="icone livre">Contact</a></li>
-                </ul>
+                        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <h2 class="menu__titre">Menu</h2>
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="max.html"> <img class="menu__icone" src="public/Icones/livre.svg" alt="icone livre"> Bouquin </a></li>
+                        <li class="menu__item"><a class="menu__link" href="lavague.html"> <img class="menu__icone" src="public/Icones/Films.svg" alt="icone film">Ciné</a></li>
+                        <li class="menu__item"><a class="menu__link" href="jeunesse.html"> <img class="menu__icone" src="public/Icones/Pointcommun.svg" alt="icone point commun">Point-commun</a></li>
+                        <li class="menu__item"><a class="menu__link" href="autresprojets.html"> <img class="menu__icone" src="public/Icones/Autresprojet.svg" alt="icone autresprojets">Autres projets</a></li>
+                        <li class="menu__item"><a class="menu__link" href="questions.html" > <img class="menu__icone" src="public/Icones/email.svg" alt="icone livre">Contact</a></li>
+                    </ul>
             </nav>
         </div>
     </header> 
 
 
 
-  <main class="page page__main">
+    <main class="page page__main">
       
         <h2 class="page__titre"><span>Autres Projets</span></h2>
+        <div class="carrousel  carrousel__mep">
             <div class="carrousel3">
-            <div class="images153">
-                <img class="image153" src="public/img/autresprojets/florent-chatelet..jpg" alt="Site de Florent Chatelet">
-                <img class="image153" src="public/img/autresprojets/ines-canalda.jpg" alt=" Site de Ines Canalda">
-                <img class="image153" src="public/img/autresprojets/pacios.jpg" alt="Site de Pacios">
+                <div class="carrousel__images">
+                    <img class="carrousel__image" id="img1" src="./public/img/autresprojets/florent-chatelet..jpg"/>
+                    <img class="carrousel__image" id="img2" src="./public/img/autresprojets/ines-canalda.jpg"/>
+                    <img class="carrousel__image" id="img3" src="./public/img/autresprojets/pacios.jpg"/>
+                </div>           
             </div>
         </div>
+    
+    <script>
+        carrousel();
+    </script>
     </main>
 
 
