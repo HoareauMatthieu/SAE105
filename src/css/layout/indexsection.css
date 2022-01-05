@@ -124,3 +124,16 @@
  .index__figure{
     text-align: center;
  }
+
+
+ .index__p1 {
+    position: relative;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.55);
+
+	display: none;
+ }

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+		<script src="https://animejs.com/lib/anime.min.js"></script>
+		<script src="src/js/fonction.js"></script>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     
 </head>
@@ -42,13 +45,14 @@
 
     <div class="index">
         <h2 class="index__titre"><span>Sujet de la semaine</span></h2>
-        <img class="index__fleche" src="public/Icones/flechebas.svg" alt="flèche pour descendre">
+        <a href="#article"><img class="index__fleche" src="public/Icones/flechebas.svg" alt="flèche pour descendre"></a>
         <p class="index__p">L’importance de la jeunesse dans les régimes totalitaires.</p>
         <p class="index__pg">Dans la plupart des régimes totalitaires, la jeunesse est endoctrinée et manipulée. Cette semaine nous étudierons le livre Max et le film La Vague qui nous permettront de comprendre la manipulation de la jeunesse dans les régimes totalitaires.</p>
         
-        <div class="index__section1">
-          <figure class="index__figure">
-              <img class="index__img" src="public/img/index/maxcover1.webp" alt="1ère de couverture de Max">
+        <div id="article" class="index__section1">
+          <figure class="index__figure" >
+              <img x-on:mouseover="monterLegende();" 
+                  x-on:mouseleave="descendreLegende();" class="index__img" src="public/img/index/maxcover1.webp" alt="1ère de couverture de Max">
                 <figcaption class="index__figcaption">
                   <h3 class="index__soustitre1">Max</h3>  
                   <p class="index__p1">Un roman coup de poing écrit par Sarah Cohen-Scali en 2012, une fiction s’inspirant de faits réels. Max, spectateur des jeunesses hitlériennes...</p>
