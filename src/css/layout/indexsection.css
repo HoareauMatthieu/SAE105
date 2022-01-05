@@ -105,3 +105,16 @@
 .index__lienbutton2 {
     color: var(--white);
 }
+
+.index__titre {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 5px solid var(--red); 
+    line-height: 0.1em;
+    margin: px 0 20px; 
+ } 
+ 
+ .index__titre span { 
+     background:var(--white); 
+     padding:0 10px; 
+ }

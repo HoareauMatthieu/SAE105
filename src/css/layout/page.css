@@ -4,7 +4,7 @@
 
 
 
-.page :not(img,figure,figcaption,strong,.page__divcit, .page__citation, .page__divextrait, .page__description) {
+.page :not(img,figure,figcaption,strong,.page__divcit, .page__citation, .page__divextrait, .page__description, .page__titre, .page__soustitre) {
     margin-right: 2vh;
     margin-left: 2vh;
     
@@ -43,12 +43,6 @@
     margin-top: 5vh;
 }
 
-.page__soustitre{
-    font-family: var(--cantata);
-    font-size: var(--textepindex);
-    text-align: center;
-    margin-top: 8vh;
-}
 
 .page__divcit {
     background-color: var(--red);
@@ -96,4 +90,33 @@
 .page__lien{
     color: var(--black);
 
+}
+
+.page__titre {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 5px solid var(--red); 
+    line-height: 0.1em;
+    margin:  0 20px; 
+ } 
+ 
+ .page__titre span { 
+     background:var(--white); 
+     padding:0 10px; 
+ }
+
+ .page__soustitre {
+  font-family: var(--cantata);
+  font-size: var(--textepindex);
+  text-align: center;
+  margin-top: 8vh;
+  width: 100%; 
+  border-bottom: 5px solid var(--red); 
+  line-height: 0.1em;
+  margin: 0px 20px; 
+} 
+
+.page__soustitre span { 
+   background:var(--white); 
+   padding:0 10px; 
 }
